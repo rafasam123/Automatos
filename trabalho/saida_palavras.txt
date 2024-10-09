@@ -1,0 +1,10 @@
+00 aceito
+011110 aceito
+11011 aceito
+11010001 aceito
+00001 aceito
+01110001 aceito
+11 aceito
+10001 aceito
+0111 não aceito
+11101000 não aceito

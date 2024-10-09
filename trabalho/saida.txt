@@ -1,0 +1,20 @@
+A B C D E F G H I J
+A
+H D F
+A 0 B
+A 1 C
+B 0 D
+B 1 B
+C 0 E
+C 1 F
+D 0 G
+D 1 H
+E 0 G
+E 1 D
+F 0 I
+F 1 J
+G 0 G
+G 1 H
+I 1 G
+J 0 I
+J 1 J
