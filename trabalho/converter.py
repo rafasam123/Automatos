@@ -100,10 +100,12 @@ def visualizar_automato(automato, nome_arquivo):
     for estado in automato.estados_finais:
         grafo.node(estado, shape='doublecircle')
 
-    with open(f"{nome_arquivo}.dot", "w") as arquivo:
-        arquivo.write(grafo.source)
+    # Renderizar o gráfico diretamente em PNG
+    grafo.format = 'png'
+    grafo.render(nome_arquivo, cleanup=True)  # O cleanup=True remove o arquivo .dot após gerar o PNG
 
-    print(f"O arquivo {nome_arquivo}.dot foi gerado.")
+    print(f"O arquivo {nome_arquivo}.png foi gerado.")
+
 
 def testar_palavras(dfa, caminho_palavras, caminho_saida):
     with open(caminho_palavras, 'r') as arquivo:
